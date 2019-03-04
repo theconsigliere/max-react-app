@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Maxwell React`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Maxwell Kirwin`,
+    description: `lets make this happen bigtime`,
+    keywords: "all of the goodtime band",
     author: `@gatsbyjs`,
   },
   plugins: [
