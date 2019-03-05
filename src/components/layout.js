@@ -12,6 +12,7 @@ import Helmet from "react-helmet"
 
 import Header from "./header"
 import "./layout.css"
+import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,6 +23,14 @@ const Layout = ({ children }) => (
             title
             description
             keywords
+          }
+        }
+        allContentfulLink(sort: { fields: [createdAt], order: ASC }) {
+          edges {
+            node {
+              title
+              url
+            }
           }
         }
       }
@@ -44,7 +53,7 @@ const Layout = ({ children }) => (
 
           <main>{children}</main>
         </div>
-        <footer />
+        <Footer data={data}>All rights reserved to the Max dog</Footer>
       </>
     )}
   />
